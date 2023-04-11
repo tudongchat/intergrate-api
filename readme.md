@@ -49,22 +49,22 @@ Here's an example using curl:
 
 # Get chatbox details
 curl -X GET \
-  -H "Authorization: Bearer `<API_KEY>`" \
+  -H "Authorization: Bearer <API_KEY>" \
   https://shark.tudongchat.com/api/chatbox/
 
 # Get chatbox conversations
 curl -X GET \
-  -H "Authorization: Bearer `<API_KEY>`" \
+  -H "Authorization: Bearer <API_KEY>" \
   https://shark.tudongchat.com/api/chatbox/conversations
 
 # Get messages in a conversation
 curl -X GET \
-  -H "Authorization: Bearer `<API_KEY>`" \
+  -H "Authorization: Bearer <API_KEY>" \
   https://shark.tudongchat.com/api/chatbox/conversations/:id/messages
 
 # Send a message in a conversation
 curl -X POST \
-  -H "Authorization: Bearer `<API_KEY>`" \
+  -H "Authorization: Bearer <API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{"content": "Hello, World!"}' \
   https://shark.tudongchat.com/api/chatbox/conversations/:id/message
