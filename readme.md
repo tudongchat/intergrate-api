@@ -32,7 +32,7 @@ All the endpoints require an Authorization header with the format Bearer `<API_K
 
 4. Send a message in a conversation
 
-- **Endpoint**: POST `/conversations/:id/message`
+- **Endpoint**: POST `/conversations/:id/messages`
 - **Headers**: Authorization: Bearer `<API_KEY>`
 - **URL Parameters**: id - ID of the conversation
 - **Request Body**: JSON object with the following properties:
@@ -67,7 +67,7 @@ curl -X POST \
   -H "Authorization: Bearer <API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{"content": "Hello, World!"}' \
-  https://shark.tudongchat.com/api/chatbox/conversations/:id/message
+  https://shark.tudongchat.com/api/chatbox/conversations/:id/messages
 ```
 
 Replace `<API_KEY>` with your actual API key and :id with the conversation ID where applicable.
